@@ -1,18 +1,19 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { HelloText, HelloTextProps } from './HelloText';
+import type { Meta, StoryObj } from '@storybook/react';
+import { HelloText } from './HelloText';
 
-export default {
+const meta: Meta<typeof HelloText> = {
   title: 'Components/HelloText',
   component: HelloText,
   argTypes: {
     text: { control: 'text' },
   },
-} as ComponentMeta<typeof HelloText>;
+};
+export default meta;
 
-const Template: ComponentStory<typeof HelloText> = (args: HelloTextProps) => <HelloText {...args} />;
+type Story = StoryObj<typeof HelloText>;
 
-export const Default = Template.bind({});
-Default.args = {
-  text: 'Hello Storybook!',
+export const Default: Story = {
+  args: {
+    text: 'Hello Storybook!',
+  },
 }; 
