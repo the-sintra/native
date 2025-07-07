@@ -116,18 +116,6 @@ export const Caption: Story = {
   ),
 };
 
-export const Interactive: Story = {
-  render: () => (
-    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-      <Typo.Headline onPress={action('headline-clicked')}>클릭 가능한 헤드라인</Typo.Headline>
-      <Typo.BodyLarge onPress={action('body-large-clicked')}>클릭 가능한 바디 라지</Typo.BodyLarge>
-      <Typo.Body onPress={action('body-clicked')}>클릭 가능한 바디 텍스트</Typo.Body>
-      <Typo.Subtext onPress={action('subtext-clicked')}>클릭 가능한 서브텍스트</Typo.Subtext>
-      <Typo.Caption onPress={action('caption-clicked')}>클릭 가능한 캡션</Typo.Caption>
-    </div>
-  ),
-};
-
 export const WithCustomStyles: Story = {
   render: () => (
     <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
