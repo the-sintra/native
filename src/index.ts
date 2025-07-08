@@ -1,6 +1,9 @@
-export { Button } from './components/Button';
-export type { ButtonProps } from './components/Button';
-export { HelloText } from './components/HelloText';
-export type { HelloTextProps } from './components/HelloText';
+/** Types */
+
+export type { BaseComponentProps, LayoutSizeProps } from './types/component';
+
+/** Components */
+
+// Typo
 export { Typo } from './components/typo';
-export type { TypoProps } from './components/typo'; 
+export type { TypoProps } from './components/typo';
