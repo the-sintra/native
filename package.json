@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-lib",
+  "name": "@the-sintra/native",
   "version": "0.1.0",
   "description": "A React Native component library built with rollup and storybook (web).",
   "main": "dist/cjs/index.js",
