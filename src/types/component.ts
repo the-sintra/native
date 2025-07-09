@@ -1,11 +1,13 @@
+import { StyleProp, ViewStyle } from "react-native";
+
 export interface BaseComponentProps {
     children: React.ReactNode;
-    className?: string;
-    style?: React.CSSProperties;
+    style?: StyleProp<ViewStyle>;
+    testID?: string;
 }
 
 export interface LayoutSizeProps {
-    fullWidth: boolean;
-    fullHeight: boolean;
-    fitContent: boolean;
+    fullWidth?: boolean;
+    fullHeight?: boolean;
+    fitContent?: boolean;
 }
