@@ -19,18 +19,9 @@ const createTypoComponent = (
 ) => {
   const TypoComponent = React.memo(function TypoComponent(props: BaseTypoProps) {
     const { children, style, ...restProps } = props;
-    
-    // useTheme을 안전하게 사용
-    let theme = null;
-    try {
-      const themeResult = useTheme();
-      theme = themeResult?.theme || themeResult;
-    } catch (error) {
-      // ThemeProvider가 없는 경우 기본값 사용
-      theme = null;
-    }
+    const {theme} = useTheme();
 
-    const textColor = theme?.color?.text?.primary || '#000000';
+    const textColor = theme.text.primary || '#000000';
 
     return (
       <Text

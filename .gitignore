@@ -11,3 +11,4 @@
 /logs
 /temp
 /.cursor
+/.jest/cache
